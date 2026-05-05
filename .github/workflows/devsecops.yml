@@ -72,7 +72,7 @@ jobs:
           chmod +x gitleaks
 
       - name: "Secrets: Scan for hardcoded secrets"
-        run: ./gitleaks detect --source . --no-git --verbose
+        run: ./gitleaks detect --source . --no-git --verbose --config .gitleaks.toml
 
       # --- SAST: Static Application Security Testing ---
       # Analiza el código fuente buscando patrones inseguros
