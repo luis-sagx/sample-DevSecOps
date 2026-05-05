@@ -1,0 +1,8 @@
+# Gitleaks configuration — allowlist for known false positives
+# These are example/documentation secrets, not real credentials.
+
+[allowlist]
+  description = "Allowlist for false positives in documentation"
+  paths = [
+    '''README\.md'''
+  ]
